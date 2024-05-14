@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Login from './pages/Login.js';
-import LandingPage from './pages/landingPage.js';
+import Default from './pages/Default.js';
 import Register from './pages/Register.js';
 import ResumeMaker from './pages/ResumeMaker.js';
 import ForgotPass from './pages/ForgotPass.js';
@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LandingPage />} /> {/* Landing page at its path */}
+        <Route path="/" element={<Default />} /> {/* Landing page at its path */}
         <Route path="*" element={<Navigate to="/" replace />} /> {/* Wildcard redirect */}
         <Route path="/login" exact element={<Login />} />
         <Route path="/Register" exact element={<Register />} />
