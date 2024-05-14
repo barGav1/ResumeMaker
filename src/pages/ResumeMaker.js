@@ -4,7 +4,7 @@ const ResumeMaker = () => {
   return (
     <div className='bg-[#F9F7F7] min-h-screen'>
       <div class = "flex justify-left items-center  gap-6 px-5">
-      <a href="/" className="text-sm font-semibold leading-6 text-blue-gray">Home</a>
+      <a href="/#" className="text-sm font-semibold leading-6 text-blue-gray">Home</a>
           <a href="./ResumeViewer" className="text-sm font-semibold leading-6 text-blue-gray">Resume Viewer</a>
           </div>
     <div className="resume-container grid grid-cols-1 md:grid-cols-2 gap-4  p-4">
