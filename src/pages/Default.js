@@ -26,7 +26,7 @@ function Default() {
                         <a href="./ResumeViewer" className="text-sm font-semibold leading-6 text-blue-gray">Resume Viewer</a>
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a href="/login" className="text-sm font-semibold leading-6 text-blue-gray">Log in <span aria-hidden="true">&rarr;</span></a>
+                        <a href="/login" className="text-sm font-semibold leading-6 text-blue-gray">Log in <span aria-hidden="true"></span></a>
                     </div>
                 </nav>
                 <div className="lg:hidden" role="dialog" aria-modal="true">
