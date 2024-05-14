@@ -40,7 +40,7 @@ const handleEdit = (card) => {
 const ResumeViewer = () => {
   return (
     <div className='bg-[#F9F7F7] min-h-screen'>
-    <a href="./" className="-m-1.5 p-1.5">
+    <a href="/" className="-m-1.5 p-1.5">
     <span className="sr-only">Your Company</span>
     <img className="h-16 w-auto" src={resumeIcon} alt=""/> 
 </a>

@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/pages/Home.js",
+    "./src/pages/Default.js",
     "./src/pages/forgotPass.js",
     "./src/pages/ResumeMaker.js",
     "./src/pages/ResumeViewer.js",
