@@ -1,21 +1,59 @@
 import React from 'react';
+import Card from '../components/Card.js';
+import Buttons from '../components/Buttons.js';
+import ResumePlaceholder from '../Files/ResumePlaceHolder.jpg';
+import resumeIcon from '../Files/Resume_icon.png';
+import ExampleResume from '../Files/ResumeExample.png';
+const cards = [
+  {
+    title: 'Resume 1',
+    description: 'This is the description for card 2.',
+    image: ExampleResume, // Replace with your image URL
+  },
+  {
+    title: 'Resume 1',
+    description: 'This is the description for card 2.',
+    image: ExampleResume, // Replace with your image URL
+  },
+  {
+    title: 'Resume 1',
+    description: 'This is the description for card 3.',
+    image: ExampleResume, // Replace with your image URL
+  },
+  {
+    title: 'Resume 1',
+    description: 'This is the description for card 4.',
+    image: ExampleResume, // Replace with your image URL
+  },
+];
+
+const handleDelete = (card) => {
+  // Implement logic to delete the card (e.g., remove from state or database)
+  console.log('Delete card:', card.title);
+};
+
+const handleEdit = (card) => {
+  // Implement logic to edit the card (e.g., navigate to an edit form)
+  console.log('Edit card:', card.title);
+};
 
 const ResumeViewer = () => {
   return (
-    <div className="bg-gray-100 min-h-screen flex items-center justify-center">
-      <div className="max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden">
-        <div className="sm:flex sm:items-center px-6 py-4">
-          <img className="block mx-auto sm:mx-0 sm:flex-shrink-0 h-16 w-16 rounded-full" src="https://via.placeholder.com/64" alt="Logo" />
-          <div className="text-center sm:text-left mt-4 sm:mt-0 sm:ml-4">
-            <h1 className="text-xl font-bold text-gray-800">Welcome to Our Website</h1>
-            <p className="text-gray-600 mt-1">We provide amazing services to meet your needs.</p>
-          </div>
+    <div className='bg-[#F9F7F7] min-h-screen'>
+    <a href="./" className="-m-1.5 p-1.5">
+    <span className="sr-only">Your Company</span>
+    <img className="h-16 w-auto" src={resumeIcon} alt=""/> 
+</a>
+    <div className="flex flex-rows gap-4 ">
+      
+      {cards.map((card) => (
+        <div key={card.title} className="flex flex-col gap-2">
+          <Card {...card} />
+          <Buttons
+          onDelete={() => handleDelete(card)} onEdit={() => handleEdit(card)} />
         </div>
-        <div className="px-6 py-4">
-          <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum lacinia mi, nec lobortis magna fermentum id. In efficitur neque nec tortor gravida, ut dapibus purus volutpat.</p>
-          <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Get Started</button>
-        </div>
-      </div>
+      ))}
+    </div>
     </div>
   );
 };
