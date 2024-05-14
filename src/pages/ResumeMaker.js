@@ -1,5 +1,4 @@
 import React from 'react';
-import resumeIcon from '../Files/Resume_icon.png';
 
 const ResumeMaker = () => {
   return (

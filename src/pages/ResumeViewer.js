@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from '../components/Card.js';
 import Buttons from '../components/Buttons.js';
-import ResumePlaceholder from '../Files/ResumePlaceHolder.jpg';
 import resumeIcon from '../Files/Resume_icon.png';
 import ExampleResume from '../Files/ResumeExample.png';
 const cards = [

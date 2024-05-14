@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/Home.css';
-import Navbar from '../components/Navbar';
 import resumeIcon from '../Files/Resume_icon.png';
 import googleIcon from '../Files/Google.webp';
 import linkedinIcon from '../Files/Linkedin.webp';
