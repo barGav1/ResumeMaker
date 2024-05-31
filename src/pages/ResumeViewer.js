@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from '../components/Card.js';
-import Buttons from '../components/Buttons.js';
 import resumeIcon from '../Files/Resume_icon.png';
 import ExampleResume from '../Files/ResumeExample.png';
 const cards = [
@@ -41,15 +40,13 @@ const ResumeViewer = () => {
     <div className='bg-[#F9F7F7] min-h-screen'>
     <a href="/#" className="-m-1.5 p-1.5">
     <span className="sr-only">Your Company</span>
-    <img className="h-16 w-auto" src={resumeIcon} alt=""/> 
+    <img className="h-16 w-auto hover:bg-slate-100" src={resumeIcon} alt=""/> 
 </a>
-    <div className="flex flex-rows gap-4 ">
+    <div className="flex flex-rows gap-4  ">
       
       {cards.map((card) => (
         <div key={card.title} className="flex flex-col gap-2">
           <Card {...card} />
-          <Buttons
-          onDelete={() => handleDelete(card)} onEdit={() => handleEdit(card)} />
         </div>
       ))}
     </div>
