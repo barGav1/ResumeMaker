@@ -25,15 +25,15 @@ const cards = [
   },
 ];
 
-const handleDelete = (card) => {
-  // Implement logic to delete the card (e.g., remove from state or database)
-  console.log('Delete card:', card.title);
-};
+// const handleDelete = (card) => {
+//   // Implement logic to delete the card (e.g., remove from state or database)
+//   console.log('Delete card:', card.title);
+// };
 
-const handleEdit = (card) => {
-  // Implement logic to edit the card (e.g., navigate to an edit form)
-  console.log('Edit card:', card.title);
-};
+// const handleEdit = (card) => {
+//   // Implement logic to edit the card (e.g., navigate to an edit form)
+//   console.log('Edit card:', card.title);
+// };
 
 const ResumeViewer = () => {
   return (
